@@ -10,6 +10,10 @@
     color: #9a9a9a;
 }
 
+.red {
+    background-color: tomato;
+}
+
 input[type="submit"].button-primary,
 input[type="submit"].button-primary:visited,
 input[type="submit"].button-primary:focus {

@@ -7,4 +7,10 @@ var param = function(name) {
 
 if (param("submitted")) {
     document.getElementById("hidden").style.display = "block";
+
+    document.getElementById("send-form").disabled = true;
+    document.getElementById("send-form").value = "Thanks!";
+    document.getElementById("send-form").style.backgroundColor = "tomato";
+    document.getElementById("send-form").style.color = "white";
+    document.getElementById("send-form").style.borderColor = "tomato";
 }
