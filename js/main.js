@@ -6,5 +6,7 @@ var param = function(name) {
 };
 
 if (param("submitted")) {
-    document.getElementById("hidden").style.display = "block";
+    // document.getElementById("hidden").style.display = "block";
+    console.log(document.getElementById('hidden'));
+    console.log('yolo');
 }
