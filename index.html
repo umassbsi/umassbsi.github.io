@@ -14,30 +14,31 @@
     <body>
         <div class="container">
             <div class="row">
+                <div class="twelve columns text-center">
+                    <img src="img/logo.png" class="u-full-width img">
+                </div>
+            </div>
+            <div class="row">
                 <div class="six columns text-center">
-                    <div class="row">
-                        <div class="twelve columns">
-                            <img src="img/logo.png" class="u-max-full-width">
-                        </div>
-                        <div class="twelve columns">
-                            <p>
-                                We're the <span class="red">hackers</span>, <span class="blue">hipsters</span>, and <span class="green">hustlers</span> of UMass Amherst. Fill out the form to join us in changing the way things get done at our school.
-                            </p>
-                        </div>
-                    </div>
+                    <p>
+                        We're the hackers, hipsters, and hustlers of UMass Amherst. Fill out the form to join us in changing the way things get done on our campus.
+                    </p>
                 </div>
                 <div class="six columns text-center">
-                    <form>
-                        <div class="row">
-                            <div class="twelve columns">
-                                <input id="email" class="input u-full-width" type="email" placeholder="your email address...">
-                                <textarea id="message" class="textarea u-full-width" placeholder="your message (optional)..."></textarea>
-                            </div>
-                            <div class="twelve columns">
-                                <input class="button-primary" type="submit" value="I'm in!">
-                            </div>
-                        </div>
+                    <form name="form" method="POST" action="http://formspree.io/ty@rapshot.com">
+                        <input required id="email" class="input u-full-width" name="email" type="email" placeholder="Your email">
+                        <textarea id="message" name="message" class="textarea u-full-width" placeholder="Your message..."></textarea>
+                        <input type="hidden" name="_next" value="/thanks.html">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <input type="submit" class="button-primary" value="I'm in!">
                     </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns text-center">
+                    <p>
+                        <a class="text-gray" href="http://tylucaskelley.com">&copy; 2015</a>
+                    </p>
                 </div>
             </div>
         </div>

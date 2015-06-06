@@ -2,14 +2,42 @@
     text-align: center;
 }
 
-.green {
-    color: forestgreen;
+.text-blue {
+    color: #178ce7;
 }
 
-.red {
-    color: tomato;
+.text-gray {
+    color: #9a9a9a;
 }
 
-.blue {
-    color: darkblue;
+input[type="submit"].button-primary,
+input[type="submit"].button-primary:visited,
+input[type="submit"].button-primary:focus {
+    background-color: #178ce7;
+    border-color: #178ce7;
+}
+
+input[type="submit"].button-primary:hover,
+input[type="submit"].button-primary:active {
+    background-color: #9a9a9a;
+    border-color: #9a9a9a;
+}
+
+p, form {
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.5em;
+}
+
+.img {
+    max-height: 700px;
+    max-width: 700px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #178ce7;
 }
