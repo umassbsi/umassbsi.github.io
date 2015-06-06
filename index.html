@@ -23,12 +23,15 @@
                     <p>
                         We're the hackers, hipsters, and hustlers of UMass Amherst. Fill out the form to join us in changing the way things get done on our campus.
                     </p>
+                    <p id="hidden" style="display:none">
+                        Thank you for being a part of the future of UMass! You'll be hearing from us soon.
+                    </p>
                 </div>
                 <div class="six columns text-center">
                     <form name="form" method="POST" action="http://formspree.io/ty@rapshot.com">
                         <input required id="email" class="input u-full-width" name="email" type="email" placeholder="Your email">
                         <textarea id="message" name="message" class="textarea u-full-width" placeholder="Your message..."></textarea>
-                        <input type="hidden" name="_next" value="/thanks.html">
+                        <input type="hidden" name="_next" value="/?submitted=true">
                         <input type="text" name="_gotcha" style="display:none">
                         <input type="submit" class="button-primary" value="I'm in!">
                     </form>
