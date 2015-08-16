@@ -1,6 +1,16 @@
-.text-center {
-    text-align: center;
+/* Typography
+---------------------------------*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
+
+.mono {
+    font-family: 'Inconsolata', monospace;
+}
+
+/* Colors
+---------------------------------*/
 
 .text-blue {
     color: #178ce7;
@@ -10,8 +20,25 @@
     color: #9a9a9a;
 }
 
-.red {
-    background-color: tomato;
+.text-white {
+    color: #fff;
+}
+
+.blue {
+    background-color: #178ce7;
+}
+
+.gray {
+    background-color: #9a9a9a;
+}
+
+.white {
+    background-color: #fff;
+}
+
+hr {
+    border-top: 1px solid #178ce7;
+    margin: 45px auto;
 }
 
 input[type="submit"].button-primary,
@@ -27,21 +54,91 @@ input[type="submit"].button-primary:active {
     border-color: #9a9a9a;
 }
 
-p, form {
-    font-family: 'Inconsolata', monospace;
-    line-height: 1.5em;
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #178ce7;
 }
 
-.img {
-    max-height: 700px;
-    max-width: 700px;
+a,
+a:hover,
+a:active {
+    color: #178ce7;
+}
+
+.link-white,
+.link-white:hover,
+.link-white:active {
+    color: #fff;
+}
+
+/* General Formatting
+---------------------------------*/
+
+.container {
+    margin-top: 150px;
+}
+
+.main-text {
+    max-width: 500px;
+    margin: 15px auto;
+    float: right;
+}
+
+.text-center {
+    text-align: center;
 }
 
 a {
     text-decoration: none;
 }
 
-a:hover,
-a:active {
-    color: #178ce7;
+.logo img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.logo {
+    margin-bottom: 50px;
+}
+
+.form {
+    margin-bottom: 50px;
+}
+
+.mobile-partners {
+    display: none;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.footer {
+    height: 40px;
+    line-height: 40px;
+}
+
+.footer .container {
+    margin-top: 0;
+}
+
+/* Media Queries
+---------------------------------*/
+
+@media (max-width: 550px) {
+    .container {
+        margin-top: 75px;
+    }
+
+    form .two {
+        text-align: center;
+    }
+
+    a[target="_blank"] img {
+        display: none;
+    }
+
+    .mobile-partners {
+        display: block;
+    }
 }

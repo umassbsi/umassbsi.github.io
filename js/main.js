@@ -6,11 +6,11 @@ var param = function(name) {
 };
 
 if (param("submitted")) {
-    document.getElementById("hidden").style.display = "block";
+    document.getElementById("success").style.display = "block";
 
-    document.getElementById("send-form").disabled = true;
-    document.getElementById("send-form").value = "Thanks!";
-    document.getElementById("send-form").style.backgroundColor = "tomato";
-    document.getElementById("send-form").style.color = "white";
-    document.getElementById("send-form").style.borderColor = "tomato";
+    document.getElementById("send").disabled = true;
+    document.getElementById("send").value = "Thanks!";
+    document.getElementById("send").style.backgroundColor = "tomato";
+    document.getElementById("send").style.color = "white";
+    document.getElementById("send").style.borderColor = "tomato";
 }

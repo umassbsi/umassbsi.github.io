@@ -1,14 +1,186 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>UMass Board of Student Innovators</title>
+
+        <!-- Info -->
+
+        <title>Board of Student Innovators @ UMass Amherst</title>
+        <link rel="icon" href="img/logo.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link href="http://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+
+        <!-- Fonts -->
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata:400,700">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+        <!-- Stylesheets -->
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="icon" href="img/logo.png">
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- Header -->
+
+            <div id="intro" class="row">
+
+                <!-- Logo & Intro-->
+
+                <div id="logo" class="twelve columns text-center logo">
+                    <a href="/" class="u-full-width">
+                        <img src="img/logo.png" alt="UMass BSI Logo" class="u-full-width">
+                    </a>
+                    <p>
+                        We're the hackers, hipsters, &amp; hustlers of UMass Amherst. Fill out the form below to apply!
+                    </p>
+                    <p id="success" style="display:none;">
+                        Thank you for being a part of the future of UMass! Hold tight, you'll be hearing from us soon.
+                    </p>
+                </div>
+
+                <!-- Application -->
+
+                <div class="twelve columns form mono">
+                    <form id="apply" name="form" method="POST" action="http://formspree.io/bob@bsi.io">
+                        <div class="row">
+                            <div class="five columns">
+                                <input required id="name" class="input u-full-width" name="name" type="text" placeholder="name">
+                            </div>
+                            <div class="five columns">
+                                <input required id="email" class="input u-full-width" name="email" type="email" placeholder="email">
+                            </div>
+                            <div class="two columns">
+                                <input id="send" type="submit" class="button-primary" value="apply!">
+                            </div>
+                            <input type="hidden" name="_next" value="/?submitted=true">
+                            <input type="text" name="_gotcha" style="display:none">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Who We Are -->
+
+            <div class="row">
+                <div class="three columns">
+                    <h2 class="text-blue">who we are</h2>
+                    <p class="mono text-gray">let us introduce ourselves</p>
+                </div>
+                <div class="nine columns">
+                    <p class="main-text">
+                        We're a group of undergraduate students that are tired of the way business is done on campus. While we all come from different backgrounds and fields of study, ranging from Computer Science to Biochemistry, we're united in our goal of building a culture of innovation and entrepreneurship here at UMass.
+                    </p>
+                    <p class="main-text">
+                        If that sounds good to you, <a href="#">fill out the form above</a> and join us in making this school as great as it can be.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What We Do -->
+
+            <div class="row">
+                <div class="three columns">
+                    <h2 class="text-blue">what we do</h2>
+                    <p class="mono text-gray">not your average club</p>
+                </div>
+                <div class="nine columns">
+                    <p class="main-text">
+                        In short, we're a catalyst for making cool things happen on campus. Our vision is to create a lasting impact on this university by driving students to build and maintain a culture that embraces challenge, change, and creativity.
+                    </p>
+                    <p class="main-text">
+                        We assist student-led groups and initiatives in their growth and organization; however, that's only one half of the story. We try to ensure that these groups are set up so that they can thrive well after the original founders have moved on or graduated.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Our Partners -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h2 class="text-center text-blue">our partners</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Desktop Devices -->
+
+                <div class="two columns text-center">
+                    <a href="http://hackumass.com" target="_blank">
+                        <img class="u-max-full-width" src="img/partners/hackumass.png">
+                    </a>
+                </div>
+                <div class="two columns text-center">
+                    <a href="https://www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship" target="_blank">
+                        <img class="u-max-full-width" src="img/partners/isenberg.png">
+                    </a>
+                </div>
+                <div class="two columns text-center">
+                    <a href="http://hackers-of-umass.github.io" target="_blank">
+                        <img class="u-max-full-width" src="img/partners/hackersofumass.png">
+                    </a>
+                </div>
+                <div class="two columns text-center">
+                    <a href="http://trext.me" target="_blank">
+                        <img class="u-max-full-width" src="img/partners/trext.png">
+                    </a>
+                </div>
+                <div class="two columns text-center">
+                    <a href="http://www.startupsforbrands.com/#intro" target="_blank">
+                        <img class="u-max-full-width" src="img/partners/evolution.png">
+                    </a>
+                </div>
+                <div class="two columns text-center">
+                    <a href="http://umass.acm.org" target="_blank">
+                        <img class="u-max-full-width" src="img/partners/acm.png">
+                    </a>
+                </div>
+
+                <!-- Mobile Devices -->
+
+                <ul class="mobile-partners">
+                    <li>
+                        <a href="http://hackumass.com" target="_blank">Hack UMass</a>
+                    </li>
+                    <li>
+                        <a href="https://www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship" target="_blank">Berthiaume Center for Entrepreneurship</a>
+                    </li>
+                    <li>
+                        <a href="http://hackers-of-umass.github.io" target="_blank">Hackers of UMass</a>
+                    </li>
+                    <li>
+                        <a href="http://trext.me" target="_blank">Trext</a>
+                    </li>
+                    <li>
+                        <a href="http://www.startupsforbrands.com/#intro" target="_blank">Evol8tion</a>
+                    </li>
+                    <li>
+                        <a href="http://umass.acm.org" target="_blank">UMass ACM Chapter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="row blue footer">
+            <div class="container">
+                <a href="http://tylucaskelley.com" class="mono link-white" target="_blank">
+                    &copy; 2015
+                </a>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+
+        <script src="js/main.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -18,41 +190,5 @@
             ga('create', 'UA-63830369-1', 'auto');
             ga('send', 'pageview');
         </script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="twelve columns text-center">
-                    <img src="img/logo.png" class="u-full-width img">
-                </div>
-            </div>
-            <div class="row">
-                <div class="six columns text-center">
-                    <p>
-                        We're the hackers, hipsters, and hustlers of UMass Amherst. Fill out the form to join us in changing the way things get done on our campus.
-                    </p>
-                    <p id="hidden" style="display:none;">
-                        Thank you for being a part of the future of UMass! You'll be hearing from us soon.
-                    </p>
-                </div>
-                <div class="six columns text-center">
-                    <form name="form" method="POST" action="http://formspree.io/bob@bsi.io">
-                        <input required id="email" class="input u-full-width" name="email" type="email" placeholder="Your email">
-                        <textarea id="message" name="message" class="textarea u-full-width" placeholder="Your message..."></textarea>
-                        <input type="hidden" name="_next" value="/?submitted=true">
-                        <input type="text" name="_gotcha" style="display:none">
-                        <input id="send-form" type="submit" class="button-primary" value="I'm in!">
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns text-center">
-                    <p>
-                        <a class="text-gray" href="http://tylucaskelley.com">&copy; 2015</a>
-                    </p>
-                </div>
-            </div>
-        </div>
     </body>
-    <script src="js/main.js"></script>
 </html>
