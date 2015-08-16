@@ -116,6 +116,7 @@ ul {
 .footer {
     height: 40px;
     line-height: 40px;
+    margin-top: 40px;
 }
 
 .footer .container {
