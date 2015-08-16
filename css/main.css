@@ -122,6 +122,11 @@ ul {
     margin-top: 0;
 }
 
+.social {
+    float: right;
+    margin: 0 10px;
+}
+
 /* Media Queries
 ---------------------------------*/
 
