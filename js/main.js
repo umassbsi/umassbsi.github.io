@@ -6,11 +6,14 @@ var param = function(name) {
 };
 
 if (param("submitted")) {
-    document.getElementById("success").style.display = "block";
+    var p = document.getElementById('success');
+    var btn = document.getElementById('send');
 
-    document.getElementById("send").disabled = true;
-    document.getElementById("send").value = "Thanks!";
-    document.getElementById("send").style.backgroundColor = "tomato";
-    document.getElementById("send").style.color = "white";
-    document.getElementById("send").style.borderColor = "tomato";
+    p.style.display = 'block';
+
+    btn.disabled = true;
+    btn.value = 'Thanks!';
+    btn.style.color = '#fff';
+    btn.style.backgroundColor = 'tomato';
+    btn.style.borderColor = 'tomato';
 }
